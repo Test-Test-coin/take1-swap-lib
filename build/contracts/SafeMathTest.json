@@ -1,0 +1,506 @@
+{
+  "contractName": "SafeMathTest",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "num",
+          "type": "uint256"
+        }
+      ],
+      "name": "sqrt",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.2+commit.bacdbe57\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"num\",\"type\":\"uint256\"}],\"name\":\"sqrt\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/Dell/documents/Myproject_test081/take2-swap-lib/contracts/test/SafeMathTest.sol\":\"SafeMathTest\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Dell/documents/Myproject_test081/take2-swap-lib/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x9ed09430799b39e964ba0a2c16d93e6ef107338413cdbdbc2837ee7440706447\",\"urls\":[\"bzz-raw://5e941b0d3fdbd6e8c803ff762c6ff4aef6a0c3cb4023ffd939c6f7fec138f2d0\",\"dweb:/ipfs/QmXsbw7m5SrbYvYkP8wRRu1zcVGJbj7m6xwnWg2XbugLLA\"]},\"/C/Users/Dell/documents/Myproject_test081/take2-swap-lib/contracts/test/SafeMathTest.sol\":{\"keccak256\":\"0xfa7d46010c1534d923f4e687375b54674599e977fae0756e64da892d8f1d256e\",\"urls\":[\"bzz-raw://f1fdcb441e44fdd53783117a84917a9f216663510a8df2e0616d96dac54ab4b2\",\"dweb:/ipfs/QmdB8neCnLJ8AbUKx6n1HT3NxChVzKS6a4eGtGRmfsw3Eg\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061010c806100206000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063677342ce14602d575b600080fd5b605660048036036020811015604157600080fd5b8101908080359060200190929190505050606c565b6040518082815260200191505060405180910390f35b6000607582607c565b9050919050565b6000600382111560c4578190506000600160028481609657fe5b040190505b8181101560bf5780915060028182858160b057fe5b04018160b857fe5b049050609b565b5060d1565b6000821460d057600190505b5b91905056fea2646970667358221220d61062d98fae15977579e0b927514ed072033c46333d39ba9a3af128d4d57b1764736f6c63430006020033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063677342ce14602d575b600080fd5b605660048036036020811015604157600080fd5b8101908080359060200190929190505050606c565b6040518082815260200191505060405180910390f35b6000607582607c565b9050919050565b6000600382111560c4578190506000600160028481609657fe5b040190505b8181101560bf5780915060028182858160b057fe5b04018160b857fe5b049050609b565b5060d1565b6000821460d057600190505b5b91905056fea2646970667358221220d61062d98fae15977579e0b927514ed072033c46333d39ba9a3af128d4d57b1764736f6c63430006020033",
+  "sourceMap": "157:133:15:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;157:133:15;;;;;;;",
+  "deployedSourceMap": "157:133:15:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;157:133:15;;;;;;;;;;;;;;;;;;;186:101;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;186:101:15;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;234:7;261:18;275:3;261:13;:18::i;:::-;254:25;;186:101;;;:::o;5689:312:5:-;5737:9;5767:1;5763;:5;5759:235;;;5789:1;5785:5;;5805:9;5825:1;5821;5817;:5;;;;;;:9;5805:21;;5841:92;5852:1;5848;:5;5841:92;;;5878:1;5874:5;;5916:1;5911;5907;5903;:5;;;;;;:9;5902:15;;;;;;5898:19;;5841:92;;;5759:235;;;;5959:1;5954;:6;5950:44;;5981:1;5977:5;;5950:44;5759:235;5689:312;;;:::o",
+  "source": "// SPDX-License-Identifier: GPL-3.0-or-later\r\n\r\npragma solidity >=0.4.0;\r\n\r\nimport '../math/SafeMath.sol';\r\n\r\n// used for testing the logic of token naming\r\ncontract SafeMathTest {\r\n    function sqrt(uint256 num) public pure returns (uint256) {\r\n        return SafeMath.sqrt(num);\r\n    }\r\n}\r\n",
+  "sourcePath": "C:/Users/Dell/documents/Myproject_test081/take2-swap-lib/contracts/test/SafeMathTest.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Dell/documents/Myproject_test081/take2-swap-lib/contracts/test/SafeMathTest.sol",
+    "exportedSymbols": {
+      "SafeMathTest": [
+        1544
+      ]
+    },
+    "id": 1545,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1529,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "48:24:15"
+      },
+      {
+        "absolutePath": "/C/Users/Dell/documents/Myproject_test081/take2-swap-lib/contracts/math/SafeMath.sol",
+        "file": "../math/SafeMath.sol",
+        "id": 1530,
+        "nodeType": "ImportDirective",
+        "scope": 1545,
+        "sourceUnit": 706,
+        "src": "76:30:15",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1544,
+        "linearizedBaseContracts": [
+          1544
+        ],
+        "name": "SafeMathTest",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 1542,
+              "nodeType": "Block",
+              "src": "243:44:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 1539,
+                        "name": "num",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1532,
+                        "src": "275:3:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 1537,
+                        "name": "SafeMath",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 705,
+                        "src": "261:8:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_SafeMath_$705_$",
+                          "typeString": "type(library SafeMath)"
+                        }
+                      },
+                      "id": 1538,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sqrt",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 704,
+                      "src": "261:13:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$returns$_t_uint256_$",
+                        "typeString": "function (uint256) pure returns (uint256)"
+                      }
+                    },
+                    "id": 1540,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "261:18:15",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 1536,
+                  "id": 1541,
+                  "nodeType": "Return",
+                  "src": "254:25:15"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "677342ce",
+            "id": 1543,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "sqrt",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 1533,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1532,
+                  "name": "num",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1543,
+                  "src": "200:11:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1531,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "200:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "199:13:15"
+            },
+            "returnParameters": {
+              "id": 1536,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1535,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 1543,
+                  "src": "234:7:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1534,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "234:7:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "233:9:15"
+            },
+            "scope": 1544,
+            "src": "186:101:15",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1545,
+        "src": "157:133:15"
+      }
+    ],
+    "src": "48:244:15"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/C/Users/Dell/documents/Myproject_test081/take2-swap-lib/contracts/test/SafeMathTest.sol",
+      "exportedSymbols": {
+        "SafeMathTest": [
+          1544
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".0"
+          ]
+        },
+        "id": 1529,
+        "name": "PragmaDirective",
+        "src": "48:24:15"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 706,
+          "absolutePath": "/C/Users/Dell/documents/Myproject_test081/take2-swap-lib/contracts/math/SafeMath.sol",
+          "file": "../math/SafeMath.sol",
+          "scope": 1545,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 1530,
+        "name": "ImportDirective",
+        "src": "76:30:15"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            1544
+          ],
+          "name": "SafeMathTest",
+          "scope": 1545
+        },
+        "children": [
+          {
+            "attributes": {
+              "documentation": null,
+              "functionSelector": "677342ce",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "sqrt",
+              "overrides": null,
+              "scope": 1544,
+              "stateMutability": "pure",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "num",
+                      "overrides": null,
+                      "scope": 1543,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1531,
+                        "name": "ElementaryTypeName",
+                        "src": "200:7:15"
+                      }
+                    ],
+                    "id": 1532,
+                    "name": "VariableDeclaration",
+                    "src": "200:11:15"
+                  }
+                ],
+                "id": 1533,
+                "name": "ParameterList",
+                "src": "199:13:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "overrides": null,
+                      "scope": 1543,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 1534,
+                        "name": "ElementaryTypeName",
+                        "src": "234:7:15"
+                      }
+                    ],
+                    "id": 1535,
+                    "name": "VariableDeclaration",
+                    "src": "234:7:15"
+                  }
+                ],
+                "id": 1536,
+                "name": "ParameterList",
+                "src": "233:9:15"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 1536
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "uint256",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "sqrt",
+                              "referencedDeclaration": 704,
+                              "type": "function (uint256) pure returns (uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 705,
+                                  "type": "type(library SafeMath)",
+                                  "value": "SafeMath"
+                                },
+                                "id": 1537,
+                                "name": "Identifier",
+                                "src": "261:8:15"
+                              }
+                            ],
+                            "id": 1538,
+                            "name": "MemberAccess",
+                            "src": "261:13:15"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 1532,
+                              "type": "uint256",
+                              "value": "num"
+                            },
+                            "id": 1539,
+                            "name": "Identifier",
+                            "src": "275:3:15"
+                          }
+                        ],
+                        "id": 1540,
+                        "name": "FunctionCall",
+                        "src": "261:18:15"
+                      }
+                    ],
+                    "id": 1541,
+                    "name": "Return",
+                    "src": "254:25:15"
+                  }
+                ],
+                "id": 1542,
+                "name": "Block",
+                "src": "243:44:15"
+              }
+            ],
+            "id": 1543,
+            "name": "FunctionDefinition",
+            "src": "186:101:15"
+          }
+        ],
+        "id": 1544,
+        "name": "ContractDefinition",
+        "src": "157:133:15"
+      }
+    ],
+    "id": 1545,
+    "name": "SourceUnit",
+    "src": "48:244:15"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.2+commit.bacdbe57.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-09-18T10:48:19.678Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
